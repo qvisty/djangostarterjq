@@ -10,3 +10,6 @@ __pycache__/
 *.log
 db.sqlite3
 media
+/venvdjangox
+# Ignore logs from simple_deploy.
+simple_deploy_logs/

@@ -6,6 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+gunicorn = "*"                # Added by simple_deploy command.
 django = "~=3.1.0"
 django-allauth = "==0.43.0"
 django-crispy-forms = "~=1.10.0"

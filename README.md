@@ -1,3 +1,9 @@
+# JQ:
+My project for using DjangoX to make a small dictionary
+
+
+
+# DjangoX below here:
 > A batteries-included Django starter project. For a production-ready version see the book [Django for Professionals](https://djangoforprofessionals.com).
 
 ## 🚀 Features
