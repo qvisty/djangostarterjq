@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
 
 from .models import Page
@@ -25,7 +26,15 @@ class AllPagesView(ListView):
         context["besked"] = "Demo til Lone"
         return context
 
+# function-based view-version of LetterPagesView
+def LetterPagesViewFunctionBased(request, letter):
 
+    pages = Page.objects.filter(title__startswith=letter)
+    context = {"letter": letter}
+    context = {"page_list": pages}
+    return render(request, "pages/pages_index.html", context)
+
+# Class based version of the same
 class LetterPagesView(ListView):
     model = Page
     template_name = "pages/pages_index.html"
